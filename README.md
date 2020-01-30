@@ -29,14 +29,12 @@ To Run to sample app you have to do the following changes by Adding **APP_ID**, 
 
    - Open the project in Android Studio.
 
-   - Go to app module -->  `Constant.java`
-
-   - Modify `APP_ID` and `API_KEY` and `REGION` with your own `API_KEY`, `APP_ID` and `REGION`.
+   - Modify `APP_ID` and `API_KEY` and `REGION` with your own .
 
    -  Select demo users or enter the **UID** at the time of login once the app is launched.
 
 <img align="center" width="100%" height="auto"
-src="https://github.com/cometchat-pro/android-chat-uikit/blob/master/Screenshot/Screen%20Shot%202019-12-23%20at%2010.13.46%20PM.png">
+src="https://github.com/cometchat-pro-samples/android-chat-ui-kit-app/blob/master/Screenshot/Screen%20Shot%202020-01-30%20at%206.39.08%20PM.png">
 
 Build and run the Sample App.
 
