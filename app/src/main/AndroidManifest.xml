@@ -4,7 +4,7 @@
     package="com.cometchat.pro.androiduikit">
 
     <application
-        android:name=".CometChatUIKIT"
+        android:name=".UIKitApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,21 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ComponentListActivity"></activity>
+        <activity android:name=".ComponentListActivity"/>
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ComponentLoadActivity"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name=".ScreenActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_screen"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SelectActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,18 +30,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserListActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".ChatActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".UserListActivity"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ShrineNavigation"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".UserListActivity"
-            android:windowSoftInputMode="adjustResize" />
+
+
     </application>
 
 </manifest>

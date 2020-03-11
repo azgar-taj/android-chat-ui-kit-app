@@ -31,7 +31,7 @@ import listeners.CustomAlertDialogHelper;
 import listeners.OnAlertDialogButtonClickListener;
 import listeners.OnItemClickListener;
 import screen.CometChatConversationListScreen;
-import screen.CometChatMessageListActivity;
+import screen.messagelist.CometChatMessageListActivity;
 import screen.CometChatGroupListScreen;
 import screen.CometChatUserInfoScreen;
 import screen.CometChatUserListScreen;
@@ -56,17 +56,17 @@ public class ComponentLoadActivity extends AppCompatActivity implements  OnAlert
             loadFragment(new CometChatConversationListScreen());
         } else if (id == R.id.moreinfo) {
             loadFragment(new CometChatUserInfoScreen());
-        } else if (id== R.id.cc_avatar) {
+        } else if (id== R.id.cometchat_avatar) {
             loadFragment(new AvatarFragment());
-        } else if (id== R.id.cc_status_indicator) {
+        } else if (id== R.id.cometchat_status_indicator) {
             loadFragment(new StatusIndicatorFragment());
-        } else if (id== R.id.cc_badge_count) {
+        } else if (id== R.id.cometchat_badge_count) {
             loadFragment(new BadgeCountFragment());
-        } else if (id== R.id.cc_user_view) {
+        } else if (id== R.id.cometchat_user_view) {
             loadFragment(new UserListViewFragment());
-        } else if (id== R.id.cc_group_view) {
+        } else if (id== R.id.cometchat_group_view) {
             loadFragment(new GroupListViewFragment());
-        } else if (id== R.id.cc_conversation_view) {
+        } else if (id== R.id.cometchat_conversation_view) {
             loadFragment(new ConversationListViewFragment());
         }
         CometChatUserListScreen.setItemClickListener(new OnItemClickListener<User>() {

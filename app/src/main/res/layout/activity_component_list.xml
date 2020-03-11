@@ -38,7 +38,7 @@
             android:layout_height="match_parent">
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:id="@+id/cc_avatar"
+                android:id="@+id/cometchat_avatar"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
@@ -53,22 +53,22 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:text="Avatar"
-                        android:id="@+id/avatartitle"
+                        android:id="@+id/avatar_title"
                         android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/primaryTextColor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:layout_toLeftOf="@+id/avatarrightArrow"
-                        android:layout_below="@+id/avatartitle"
+                        android:layout_toLeftOf="@+id/avatar_right_arrow"
+                        android:layout_below="@+id/avatar_title"
                         android:text="@string/avatar_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <ImageView
-                        android:id="@+id/avatarrightArrow"
+                        android:id="@+id/avatar_right_arrow"
                         android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:src="@drawable/ic_arrow_right_24dp"
                         android:layout_width="32dp"
                         android:layout_height="32dp"/>
@@ -76,7 +76,7 @@
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:id="@+id/cc_status_indicator"
+                android:id="@+id/cometchat_status_indicator"
                 app:cardElevation="4dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -91,22 +91,22 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:text="Status Indicator"
-                        android:id="@+id/statustitle"
+                        android:id="@+id/status_title"
                         android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/primaryTextColor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:layout_toLeftOf="@+id/statusrightArrow"
-                        android:layout_below="@+id/statustitle"
+                        android:layout_toStartOf="@+id/statusrightArrow"
+                        android:layout_below="@id/status_title"
                         android:text="@string/statusIndicator_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <ImageView
                         android:id="@+id/statusrightArrow"
                         android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
                         android:src="@drawable/ic_arrow_right_24dp"
                         android:layout_width="32dp"
                         android:layout_height="32dp"/>
@@ -114,7 +114,7 @@
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:id="@+id/cc_badge_count"
+                android:id="@+id/cometchat_badge_count"
                 app:cardElevation="4dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -129,15 +129,15 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:text="Badge Count"
-                        android:id="@+id/badgetitle"
+                        android:id="@+id/badge_title"
                         android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/primaryTextColor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:layout_toLeftOf="@+id/badgerightArrow"
-                        android:layout_below="@+id/badgetitle"
+                        android:layout_toStartOf="@id/badgerightArrow"
+                        android:layout_below="@+id/badge_title"
                         android:text="@string/badgeCount_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -155,7 +155,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:id="@+id/cc_user_view"
+                android:id="@+id/cometchat_user_view"
                 app:cardElevation="4dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -191,7 +191,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 app:cardElevation="4dp"
-                android:id="@+id/cc_group_view"
+                android:id="@+id/cometchat_group_view"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:clickable="true"
@@ -229,7 +229,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 app:cardElevation="4dp"
-                android:id="@+id/cc_conversation_view"
+                android:id="@+id/cometchat_conversation_view"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="16dp"
@@ -244,20 +244,20 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:text="Conversation List"
-                        android:id="@+id/conversationvwtitle"
+                        android:id="@+id/conversation_title"
                         android:textStyle="bold"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="@color/primaryTextColor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:layout_toLeftOf="@+id/conversationvwrightArrow"
-                        android:layout_below="@+id/conversationvwtitle"
+                        android:layout_toLeftOf="@+id/conversation_right_arrow"
+                        android:layout_below="@+id/conversation_title"
                         android:text="@string/conversationlist_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <ImageView
-                        android:id="@+id/conversationvwrightArrow"
+                        android:id="@+id/conversation_right_arrow"
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
                         android:src="@drawable/ic_arrow_right_24dp"

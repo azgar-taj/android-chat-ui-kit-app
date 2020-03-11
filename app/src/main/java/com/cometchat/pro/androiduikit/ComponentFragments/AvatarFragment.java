@@ -42,8 +42,7 @@ public class AvatarFragment extends Fragment implements ColorPickerDialog.OnColo
         View view = inflater.inflate(R.layout.fragment_avatar, container, false);
         Avatar avatar = view.findViewById(R.id.avataricon);
         avatar.setBorderColor(getResources().getColor(R.color.colorPrimaryDark));
-        int randomNum = new Random().nextInt((1000-10)+1)+10;
-        avatar.setAvatar("https://picsum.photos/id/"+randomNum+"/200/200");
+        avatar.setAvatar(CometChat.getLoggedInUser().getAvatar());
         TextInputEditText borderWidth = view.findViewById(R.id.borderWidth);
         borderWidth.addTextChangedListener(new TextWatcher() {
             @Override

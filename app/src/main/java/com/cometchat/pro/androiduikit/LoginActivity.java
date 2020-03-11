@@ -14,7 +14,7 @@ import com.cometchat.pro.models.User;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import constants.Constant;
+import com.cometchat.pro.androiduikit.constants.AppConfig;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -56,8 +56,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void login(String uid) {
 
-        
-        CometChat.login(uid, Constant.AppDetails.API_KEY, new CometChat.CallbackListener<User>() {
+
+        CometChat.login(uid, AppConfig.AppDetails.API_KEY, new CometChat.CallbackListener<User>() {
             @Override
             public void onSuccess(User user) {
                      startActivity(new Intent(LoginActivity.this, SelectActivity.class));

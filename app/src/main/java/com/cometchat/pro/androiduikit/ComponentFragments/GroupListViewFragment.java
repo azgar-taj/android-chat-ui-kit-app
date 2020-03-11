@@ -14,22 +14,17 @@ import androidx.fragment.app.Fragment;
 
 import com.cometchat.pro.androiduikit.R;
 import com.cometchat.pro.androiduikit.databinding.FragmentGroupListBinding;
-import com.cometchat.pro.androiduikit.databinding.FragmentUserListBinding;
 import com.cometchat.pro.constants.CometChatConstants;
 import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.core.GroupsRequest;
-import com.cometchat.pro.core.UsersRequest;
 import com.cometchat.pro.exceptions.CometChatException;
 import com.cometchat.pro.models.Group;
-import com.cometchat.pro.models.User;
 
 import java.util.List;
 
 import constant.StringContract;
-import listeners.GroupItemClickListener;
 import listeners.OnItemClickListener;
-import listeners.UserItemClickListener;
-import screen.CometChatMessageListActivity;
+import screen.messagelist.CometChatMessageListActivity;
 
 public class GroupListViewFragment extends Fragment {
 

@@ -5,9 +5,7 @@
       android:title="Conversation"
       android:icon="@drawable/ic_chat_bubble_outline"
       />
-  <item android:id="@+id/menu_users"
-      android:title="Users"
-      android:icon="@drawable/ic_person_black_24dp"/>
+
 
     <item android:icon="@drawable/ic_group_black_24dp"
         android:title="Groupa"

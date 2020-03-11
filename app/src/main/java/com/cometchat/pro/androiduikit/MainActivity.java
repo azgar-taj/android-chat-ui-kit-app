@@ -5,47 +5,58 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.exceptions.CometChatException;
 import com.cometchat.pro.models.User;
-
 import java.util.ArrayList;
+import com.cometchat.pro.androiduikit.constants.AppConfig;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 
-import constants.Constant;
 
 public class MainActivity extends AppCompatActivity {
 
     private String TAG = "MainActivity";
-    private EditText uid;
-    ArrayList<String> tabArray = new ArrayList();
+
+    private MaterialButton loginBtn;
+
+    private MaterialCardView superhero1;
+
+    private MaterialCardView superhero2;
+
+    private MaterialCardView superhero3;
+
+    private MaterialCardView superhero4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.login).setOnClickListener(new View.OnClickListener() {
+        loginBtn = findViewById(R.id.login);
+        superhero1 = findViewById(R.id.superhero1);
+        superhero2 = findViewById(R.id.superhero2);
+        superhero3 = findViewById(R.id.superhero3);
+        superhero4 = findViewById(R.id.superhero4);
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick(View view) {
                     startActivity(new Intent(MainActivity.this,LoginActivity.class));
                 }
             });
 
-
-        findViewById(R.id.superhero1).setOnClickListener(view -> {
+        superhero1.setOnClickListener(view -> {
                 findViewById(R.id.superhero1_progressbar).setVisibility(View.VISIBLE);
                 login("superhero1");
         });
-        findViewById(R.id.superhero2).setOnClickListener(view -> {
+        superhero2.setOnClickListener(view -> {
                 findViewById(R.id.superhero2_progressbar).setVisibility(View.VISIBLE);
                 login("superhero2");
         });
-        findViewById(R.id.superhero3).setOnClickListener(view -> {
+        superhero3.setOnClickListener(view -> {
                 findViewById(R.id.superhero3_progressbar).setVisibility(View.VISIBLE);
                 login("superhero3");
         });
-        findViewById(R.id.superhero4).setOnClickListener(view -> {
+        superhero4.setOnClickListener(view -> {
                 findViewById(R.id.superhero4_progressbar).setVisibility(View.VISIBLE);
                 login("superhero4");
         });
@@ -54,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void login(String uid) {
 
-        CometChat.login(uid, Constant.AppDetails.API_KEY, new CometChat.CallbackListener<User>() {
+        CometChat.login(uid, AppConfig.AppDetails.API_KEY, new CometChat.CallbackListener<User>() {
             @Override
             public void onSuccess(User user) {
                 startActivity(new Intent(MainActivity.this, SelectActivity.class));

@@ -9,6 +9,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [file_provider: "com.cometchat.pro.androiduikit"]
+
     }
     dataBinding {
         enabled = true
@@ -22,11 +25,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
     lintOptions {
         checkReleaseBuilds false
             // Or, if you prefer, you can continue to check for errors in release builds,
-        // but continue the build even when errors are found:
+           // but continue the build even when errors are found:
         abortOnError false
     }
 }
@@ -45,10 +49,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation project(path: ':uikit')
 
-    implementation 'com.google.android.material:material:1.2.0-alpha01'
+    implementation 'com.google.android.material:material:1.2.0-alpha05'
     implementation 'com.facebook.shimmer:shimmer:0.4.0'
 
-    implementation 'com.cometchat:pro-android-chat-sdk:2.0.3-beta'
+    implementation 'com.cometchat:pro-android-chat-sdk:2.0.4-beta1'
 
 }
 

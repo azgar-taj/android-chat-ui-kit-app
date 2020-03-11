@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioGroup;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ObservableArrayList;
@@ -18,15 +17,13 @@ import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.core.UsersRequest;
 import com.cometchat.pro.exceptions.CometChatException;
 import com.cometchat.pro.models.User;
-import com.cometchat.pro.uikit.StatusIndicator;
 import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.List;
 
 import constant.StringContract;
 import listeners.OnItemClickListener;
-import listeners.UserItemClickListener;
-import screen.CometChatMessageListActivity;
+import screen.messagelist.CometChatMessageListActivity;
 
 public class UserListViewFragment extends Fragment {
 

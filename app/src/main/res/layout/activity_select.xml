@@ -46,8 +46,7 @@
                     <TextView
                         android:layout_gravity="center"
                         android:padding="16dp"
-                        android:textColor="@color/primaryTextColor"
-                        android:text="It open's Activity dorectly from UI Library. It is predifined UI helpful for user to build chat system by integrating it within minutes"
+                        android:text="@string/cometchat_unified_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <View
@@ -101,10 +100,13 @@
                 <TextView
                     android:layout_gravity="center"
                     android:padding="16dp"
-                    android:textColor="@color/primaryTextColor"
-                    android:text="It open's Screen Activity where user can use predefined screen present in library. User can create their own app using screen in few minutes."
+                    android:text="@string/cometchat_screen_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                  <RadioGroup
                         android:orientation="horizontal"
                         android:gravity="center"
@@ -114,24 +116,22 @@
                         android:paddingLeft="16dp"
                         android:id="@+id/screenselector"
                         android:layout_margin="16dp"
-                        android:background="@drawable/cc_circular_edt_background"
+                        android:background="@drawable/search_box"
                         android:backgroundTint="@color/light_grey"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <RadioButton
+                            android:button="@android:color/transparent"
                             android:id="@+id/users"
                             android:padding="8dp"
-                            android:background="@drawable/radiobuttonbackground"
-                            android:button="@android:color/transparent"
                             android:text="Users"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <RadioButton
                             android:id="@+id/groups"
                             android:padding="8dp"
-                            android:background="@drawable/radiobuttonbackground"
-                            android:button="@android:color/transparent"
                             android:text="Groups"
+                            android:button="@android:color/transparent"
                             android:ellipsize="end"
                             android:maxLines="1"
                             android:layout_width="wrap_content"
@@ -139,17 +139,15 @@
                         <RadioButton
                             android:id="@+id/conversations"
                             android:padding="8dp"
-                            android:background="@drawable/radiobuttonbackground"
-                            android:button="@android:color/transparent"
                             android:text="Conversations"
                             android:ellipsize="end"
+                            android:button="@android:color/transparent"
                             android:maxLines="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <RadioButton
                             android:id="@+id/moreinfo"
                             android:padding="8dp"
-                            android:background="@drawable/radiobuttonbackground"
                             android:button="@android:color/transparent"
                             android:text="More Info"
                             android:ellipsize="end"
@@ -157,6 +155,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </RadioGroup>
+                </HorizontalScrollView>
                 <View
                     android:layout_marginBottom="5dp"
                     android:background="@color/menu_background_grey"
@@ -170,7 +169,6 @@
                         android:layout_gravity="center_horizontal"
                         android:text="Navigate"
                         android:textStyle="bold"
-
                         android:layout_width="match_parent"
                         android:layout_height="45dp"/>
             </LinearLayout>
@@ -207,8 +205,7 @@
                 <TextView
                     android:layout_gravity="center"
                     android:padding="16dp"
-                    android:textColor="@color/primaryTextColor"
-                    android:text="It show's list of component which users can use at their end to create thier own chat app within minutes/"
+                    android:text="@string/uicomponent_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <View
@@ -222,7 +219,7 @@
                     android:layout_gravity="center_horizontal"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:textColor="@color/colorPrimary"
-                    android:text="Navigate"
+                    android:text="Show"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"/>
