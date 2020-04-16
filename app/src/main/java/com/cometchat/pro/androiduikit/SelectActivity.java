@@ -130,13 +130,15 @@ public class SelectActivity extends AppCompatActivity {
             }
         });
     }
-
     @Override
     protected void onResume() {
         super.onResume();
+
         if (CometChat.getLoggedInUser()==null)
         {
             startActivity(new Intent(SelectActivity.this,MainActivity.class));
         }
+
     }
+
 }

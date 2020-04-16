@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import screen.unified.CometChatUnified;
+
 import com.cometchat.pro.core.CometChat;
 import com.cometchat.pro.exceptions.CometChatException;
 import com.cometchat.pro.models.User;
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void login(String uid) {
-
+        
         CometChat.login(uid, AppConfig.AppDetails.API_KEY, new CometChat.CallbackListener<User>() {
             @Override
             public void onSuccess(User user) {
@@ -80,5 +82,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
     }
 }
